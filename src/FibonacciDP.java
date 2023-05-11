@@ -23,3 +23,16 @@ public class FibonacciDP {
         System.out.println("Fibonacci(" + n + ") = " + result);
     }
 }
+
+class Solution{
+
+    public void solution() {
+        //프로그래머스 멀리뛰기 문제
+        int[] dp = new int[2001];
+        dp[1] = 1;
+        dp[2] = 2;
+        for (int i = 3; i < 2001; i++) {
+            dp[i] = dp[i - 2] + dp[i - 1];
+        }
+    }
+}
